@@ -10,6 +10,6 @@ namespace ReportWebApi.Models
         {
         }
 
-        public DbSet<ReportItem> ReportItems { get; set; } = null!;
+        public DbSet<ReportItem> ReportItem { get; set; } = null!;
     }
 }

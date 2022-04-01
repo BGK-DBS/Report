@@ -26,14 +26,14 @@ namespace ReportWebApi.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<ReportItem>>> GetReportItems()
         {
-            return await _context.ReportItems.ToListAsync();
+            return await _context.ReportItem.ToListAsync();
         }
 
         // GET: api/ReportItems/5
         [HttpGet("{id}")]
         public async Task<ActionResult<ReportItem>> GetReportItem(int id)
         {
-            var reportItem = await _context.ReportItems.FindAsync(id);
+            var reportItem = await _context.ReportItem.FindAsync(id);
 
             if (reportItem == null)
             {
@@ -79,7 +79,7 @@ namespace ReportWebApi.Controllers
         [HttpPost]
         public async Task<ActionResult<ReportItem>> PostReportItem(ReportItem reportItem)
         {
-            _context.ReportItems.Add(reportItem);
+            _context.ReportItem.Add(reportItem);
             await _context.SaveChangesAsync();
 
             return CreatedAtAction(nameof(GetReportItem), new { id = reportItem.Id }, reportItem);
@@ -89,13 +89,13 @@ namespace ReportWebApi.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteReportItem(int id)
         {
-            var reportItem = await _context.ReportItems.FindAsync(id);
+            var reportItem = await _context.ReportItem.FindAsync(id);
             if (reportItem == null)
             {
                 return NotFound();
             }
 
-            _context.ReportItems.Remove(reportItem);
+            _context.ReportItem.Remove(reportItem);
             await _context.SaveChangesAsync();
 
             return NoContent();
@@ -103,7 +103,7 @@ namespace ReportWebApi.Controllers
 
         private bool ReportItemExists(int id)
         {
-            return _context.ReportItems.Any(e => e.Id == id);
+            return _context.ReportItem.Any(e => e.Id == id);
         }
     }
 }
