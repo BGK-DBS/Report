@@ -1,17 +1,57 @@
 # Report
-Rapid News Reports Web API
 
-Notes as of 29/03 : 
-Uses in Memory Db
+## Description: 
+Rapid News Reports Web API, which has the following CRUD operations: 
+* Get a single report
+* Get of list of reports - filters to be added 
+* Add a new report
+* Update an existing report
+* Delete a report
 
-Post - set date modified date = date created 
+https://www.markdownguide.org/cheat-sheet
 
-Put - Created date should not be modified  
+## Requirements 
 
-Swagger set-up so can test by running ctrl F5 and putting /swagger/index.html
+* .NET version 6
+* Markdown editor plugin
 
-testing 1 2 3 5 6 789
 
-More Practice ......
+## Migrations 
 
-Practise 19:11...
+### Creating Migration Scripts
+
+* In Visual Studio, Click on the Tools -> Nuget Package Manager -> Package Manager Console
+* First migration run the following
+
+```bash
+Add-Migration InitialMigration
+```
+
+* Verify migrations scripts are run successfully and Migrations folder is created
+
+### Running Migrations Scripts
+
+To run the migration, again open up the Package Manager Console and run the following:
+
+```bash
+Update-Database
+```
+
+## Running the project locally
+
+Using Visual Studio: 
+* Click the IIS express run button in visual studio
+* Swagger UI can be accessed on  https://localhost:7011/swagger/index.html
+
+
+## Coding to dos
+
+* Put need to ensure date Post - set date modified date = date created 
+* Publish field - IsPublished to be added to the db
+* link from ui to report webapi for each of the crud functions and get return list
+* filtering of HTTPget - all (mine), All reports (all mine and published other), Category
+
+ 
+
+
+
