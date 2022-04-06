@@ -5,14 +5,15 @@
         public int Id { get; set; }
         public string Title { get; set; }
 
-        public string Description { get; set; }
+        public string Body { get; set; }
 
-        public Guid CreatedBy { get; set; }
-
-        public DateTime DateCreated { get; set; }
+        public DateTime CreationDate { get; set; }
 
         public DateTime LastModifiedDate { get; set; }
 
         public string Category { get; set; }
+
+        public string CreationEmail { get; set; }   
+
     }
 }

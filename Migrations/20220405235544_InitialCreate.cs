@@ -16,11 +16,11 @@ namespace ReportWebApi.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Title = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    CreatedBy = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    DateCreated = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    Body = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    CreationDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     LastModifiedDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    Category = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Category = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    CreationEmail = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
