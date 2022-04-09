@@ -45,11 +45,9 @@ Using Visual Studio:
 
 
 ## Coding to dos
-
-* Put need to ensure date Post - set date modified date = date created 
 * Publish field - IsPublished to be added to the db
-* link from ui to report webapi for each of the crud functions and get return list
-* filtering of HTTPget - all (mine), All reports (all mine and published other), Category
+
+
 
  
 
