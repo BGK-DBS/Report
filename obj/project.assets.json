@@ -9677,19 +9677,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\blana\\.nuget\\packages\\": {}
+    "C:\\Users\\keith\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\blana\\projectsdbs\\ReportWebApi\\ReportWebApi.csproj",
+      "projectUniqueName": "C:\\Users\\keith\\Source\\Repos\\BGK-DBS\\ReportWebApi\\ReportWebApi.csproj",
       "projectName": "ReportWebApi",
-      "projectPath": "C:\\Users\\blana\\projectsdbs\\ReportWebApi\\ReportWebApi.csproj",
-      "packagesPath": "C:\\Users\\blana\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\blana\\projectsdbs\\ReportWebApi\\obj\\",
+      "projectPath": "C:\\Users\\keith\\Source\\Repos\\BGK-DBS\\ReportWebApi\\ReportWebApi.csproj",
+      "packagesPath": "C:\\Users\\keith\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\keith\\Source\\Repos\\BGK-DBS\\ReportWebApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\blana\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\keith\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

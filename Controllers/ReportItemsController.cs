@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using ReportWebApi.Models;
 
@@ -27,6 +28,42 @@ namespace ReportWebApi.Controllers
         public async Task<ActionResult<IEnumerable<ReportItem>>> GetReportItems()
         {
             return await _context.ReportItem.ToListAsync();
+        }
+
+        // Purpose - return a list of reports with the following filtering:
+        //   all reports or the logged in user reports only
+        //   All categories or from a particular category
+        //   
+
+        //GET: api/ReportItems/FilterReports?creationEmail?={creationEmail}&category?={category}
+        [HttpGet("FilterReports")]
+        public async Task<ActionResult<IEnumerable<ReportItem>>> GetReportFilteredItems([FromQuery] string creationEmail, [FromQuery] string category)
+        {
+            // Use LINQ to get list of genres.
+            IQueryable<string> CategoryQuery = from m in _context.ReportItem
+                                               orderby m.Category
+                                               select m.Category;
+
+            var reports = from m in _context.ReportItem
+                          select m;
+
+            if (!string.IsNullOrEmpty(category))
+            {
+                reports = reports.Where(s => s.Category == category);
+            }
+
+            if (!string.IsNullOrEmpty(creationEmail))
+            {
+                reports = reports.Where(x => x.CreationEmail == creationEmail);
+            }
+
+            var ReportCategoryVM = new ReportCategoryViewModel
+            {
+                Categories = new SelectList(await CategoryQuery.Distinct().ToListAsync()),
+                Reports = await reports.ToListAsync()
+            };
+
+            return ReportCategoryVM.Reports;
         }
 
         // GET: api/ReportItems/5
