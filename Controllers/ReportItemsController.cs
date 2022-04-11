@@ -37,19 +37,24 @@ namespace ReportWebApi.Controllers
 
         //GET: api/ReportItems/FilterReports?creationEmail?={creationEmail}&category?={category}
         [HttpGet("FilterReports")]
-        public async Task<ActionResult<IEnumerable<ReportItem>>> GetReportFilteredItems([FromQuery] string creationEmail, [FromQuery] string category)
+        public async Task<ActionResult<IEnumerable<ReportItem>>> GetReportFilteredItems([FromQuery]string creationEmail, [FromQuery]int categoryId)
         {
             // Use LINQ to get list of genres.
+
+
+            //IQueryable<string> CategoryQuery = from m in _context.ReportItem
+            //                                   orderby m.CategoryId
+            //                                   select m.CategoryId;
+
             IQueryable<string> CategoryQuery = from m in _context.ReportItem
-                                               orderby m.Category
-                                               select m.Category;
+                                               select creationEmail;
 
             var reports = from m in _context.ReportItem
                           select m;
 
-            if (!string.IsNullOrEmpty(category))
+            if (categoryId != 0)
             {
-                reports = reports.Where(s => s.Category == category);
+                reports = reports.Where(s => s.CategoryId == categoryId);
             }
 
             if (!string.IsNullOrEmpty(creationEmail))

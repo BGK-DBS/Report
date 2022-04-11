@@ -12,7 +12,7 @@ using ReportWebApi.Models;
 namespace ReportWebApi.Migrations
 {
     [DbContext(typeof(ReportContext))]
-    [Migration("20220405235544_InitialCreate")]
+    [Migration("20220410212517_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -36,9 +36,8 @@ namespace ReportWebApi.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Category")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("CategoryId")
+                        .HasColumnType("int");
 
                     b.Property<DateTime>("CreationDate")
                         .HasColumnType("datetime2");
