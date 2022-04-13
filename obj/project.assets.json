@@ -9677,19 +9677,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\gilbe\\.nuget\\packages\\": {}
+    "C:\\Users\\blana\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gilbe\\OneDrive\\Documentos\\GitHub\\ReportWebApi\\ReportWebApi.csproj",
+      "projectUniqueName": "C:\\Users\\blana\\projectsdbs\\ReportWebApi\\ReportWebApi.csproj",
       "projectName": "ReportWebApi",
-      "projectPath": "C:\\Users\\gilbe\\OneDrive\\Documentos\\GitHub\\ReportWebApi\\ReportWebApi.csproj",
-      "packagesPath": "C:\\Users\\gilbe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gilbe\\OneDrive\\Documentos\\GitHub\\ReportWebApi\\obj\\",
+      "projectPath": "C:\\Users\\blana\\projectsdbs\\ReportWebApi\\ReportWebApi.csproj",
+      "packagesPath": "C:\\Users\\blana\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\blana\\projectsdbs\\ReportWebApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\gilbe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\blana\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -9756,7 +9756,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
