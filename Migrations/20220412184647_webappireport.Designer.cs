@@ -12,8 +12,8 @@ using ReportWebApi.Models;
 namespace ReportWebApi.Migrations
 {
     [DbContext(typeof(ReportContext))]
-    [Migration("20220410212517_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20220412184647_webappireport")]
+    partial class webappireport
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

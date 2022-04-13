@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace ReportWebApi.Migrations
 {
-    public partial class InitialCreate : Migration
+    public partial class webappireport : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
