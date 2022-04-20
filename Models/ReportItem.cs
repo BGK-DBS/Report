@@ -15,5 +15,6 @@
 
         public string CreationEmail { get; set; }   
 
+        public Boolean IsPublished { get; set; }
     }
 }
