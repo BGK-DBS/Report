@@ -12,8 +12,8 @@ using ReportWebApi.Models;
 namespace ReportWebApi.Migrations
 {
     [DbContext(typeof(ReportContext))]
-    [Migration("20220412184647_webappireport")]
-    partial class webappireport
+    [Migration("20220424120633_initialCreate")]
+    partial class initialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -45,6 +45,9 @@ namespace ReportWebApi.Migrations
                     b.Property<string>("CreationEmail")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsPublished")
+                        .HasColumnType("bit");
 
                     b.Property<DateTime>("LastModifiedDate")
                         .HasColumnType("datetime2");
