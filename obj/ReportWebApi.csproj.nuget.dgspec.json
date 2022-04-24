@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\blana\\projectsdbs\\ReportWebApi\\ReportWebApi.csproj": {}
+    "C:\\Users\\blana\\final\\ReportWebApi\\ReportWebApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\blana\\projectsdbs\\ReportWebApi\\ReportWebApi.csproj": {
+    "C:\\Users\\blana\\final\\ReportWebApi\\ReportWebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\blana\\projectsdbs\\ReportWebApi\\ReportWebApi.csproj",
+        "projectUniqueName": "C:\\Users\\blana\\final\\ReportWebApi\\ReportWebApi.csproj",
         "projectName": "ReportWebApi",
-        "projectPath": "C:\\Users\\blana\\projectsdbs\\ReportWebApi\\ReportWebApi.csproj",
+        "projectPath": "C:\\Users\\blana\\final\\ReportWebApi\\ReportWebApi.csproj",
         "packagesPath": "C:\\Users\\blana\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\blana\\projectsdbs\\ReportWebApi\\obj\\",
+        "outputPath": "C:\\Users\\blana\\final\\ReportWebApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\blana\\AppData\\Roaming\\NuGet\\NuGet.Config",

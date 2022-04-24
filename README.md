@@ -41,7 +41,7 @@ To open the solution in Visual Studio, select the Green Code button and then cli
 
 A box will appear asking can Github open in visual studio- continue by selecting this:
 
-![permission to open in visual studio](./docs/images/open_in_visual_studio2.png)
+![permission to open in visual studio](./docs/images/Open_in_visual_studio2.png)
 
 In Visual Studio, select "clone" at the bottom right hand corner of the screen
 
@@ -56,7 +56,7 @@ In solutions explorer, select ReportWebApi.sln
 * First migration run the following
 
 ```bash
-Add-Migration InitialMigration
+Add-Migration InitialReportsMigration
 ```
 
 * Verify migrations scripts are run successfully and Migrations folder is created

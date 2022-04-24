@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eyEw623CacbBPbl2dbQNoa5dOdWDfOFIe52/t6hwmgzaK9vyCYrJ+nOZGmtVn4k2B9dA36UVRtCbAl6+fh6/Kg==",
+  "dgSpecHash": "Hiuz0xGCINSXz/N/q++78VASVN86KyoanXCV7dJ9tdgWncvHVhB9ta4HcIc1AdmfsX6Uf8pYIdEKQtta8zi3nA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\blana\\projectsdbs\\ReportWebApi\\ReportWebApi.csproj",
+  "projectFilePath": "C:\\Users\\blana\\final\\ReportWebApi\\ReportWebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\blana\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\blana\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
